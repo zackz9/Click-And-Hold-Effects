@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click And Hold Effects</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <section>
+        <h2>Click and hold effects using css and JS</h2>
+        <p>Dalorum consequatur nesciunt repudiandae ad! Repudiandae voluptatibus ipsa iusto nulla natus modi, libero quasi in eos dolorem impedit praesentium, possimus laudantium fuga temporibus tempora quisquam labore nostrum expedita deleniti ab placeat animi! Repellat debitis voluptas saepe similique? Odio omnis eum dolorem mollitia ipsa autem quidem explicabo similique blanditiis recusandae quis officia possimus cupiditate vero at voluptatem praesentium modi eius consequuntur id, dolore et magni hic! Nam doloribus sint perspiciatis qui ipsa doloremque, non veniam repellendus asperiores sit laborum atque beatae quas unde!</p>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ad minus culpa. Sequi accusantium eaque quidem provident iste temporibus ullam vel reprehenderit, sapiente, dolor fugit fuga cumque odit possimus maxime itaque quo quod distinctio consequatur adipisci? Ab quia doloremque facilis, suscipit magnam nemo veniam blanditiis cupiditate quae, ex ratione!</p>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptate minima saepe quidem labore, eveniet incidunt a porro totam, nam ullam! Accusamus, ipsa aspernatur perferendis quidem explicabo illo fuga, aliquid pariatur placeat similique eos quas consequuntur nam ratione veniam tempora.</p>
+    </section>
+    <div id="cursor"></div>
+    <script type="text/javascript">
+        
+        let cursor = document.getElementById('cursor');
+        window.onmousemove = function(e) {
+            let x = e.clientX, 
+                y = e.clientY;
+
+        cursor.style.left = x + 'px';
+        cursor.style.top = y + 'px';
+            
+        };
+
+    </script>
+</body>
+</html>
